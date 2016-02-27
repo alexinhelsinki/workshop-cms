@@ -1,23 +1,6 @@
 var http = require('http');
 var fs = require('fs');
 
-function handler (request, response) {
-
-  if (endpoint === "/") {
-    response.writeHead(200, {"Content-Type": "text/html"});
-
-    fs.readFile(__dirname + '/public/index.html', function(error, file) {
-      if (error) {
-        console.log(error);
-        return;
-      }
-
-      response.end(file);
-    });
-  }
-}
-
-var http = require('http');
 
 var message = 'I am so happy to be part of the Node Girls workshop!';
 var message1 = 'Node is so easy!';
@@ -44,8 +27,15 @@ else if (endpoint ==='/girls') {
   }
 else if (endpoint ==='/') {
   response.writeHead(200, {"Content-Type": "text/html"});
-  response.write(message); //response body
-  response.end(); // finish response
+
+
+  fs.readFile(__dirname + '/public/index.html', function(error, file) {
+    if (error) {
+      console.log(error);
+      return;
+    }
+
+  response.end(file); // finish response
     }
 }
 
