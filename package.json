@@ -1,0 +1,19 @@
+{
+  "name": "workshop-cms",
+  "version": "1.0.0",
+  "description": "My first json file. Whoo!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-girls/workshop-cms.git"
+  },
+  "author": "Alexandra Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/node-girls/workshop-cms/issues"
+  },
+  "homepage": "https://github.com/node-girls/workshop-cms#readme"
+}
